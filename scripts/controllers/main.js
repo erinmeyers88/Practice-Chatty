@@ -11,12 +11,10 @@ angular.module('chattyApp')
         messageService.addMessage(message).then(function ( response ) {
           $scope.messages = response.data;
         });
+        
       }
+      $scope.newMessage = "";
     };
 
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  
   });
